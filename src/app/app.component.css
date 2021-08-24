@@ -1,0 +1,38 @@
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app{
+    width: 75%;
+}
+
+.co{
+    width: 23%;
+}
+
+
+@media screen and (max-width: 1400px) {
+   
+   
+   .app {
+       width: 60% ;
+   }
+   .co{
+       width: 38% ;
+   }
+}
+
+
+@media screen and (max-width: 1000px) {
+     main{
+         display: block;
+     }
+
+    .app {
+        width: 100% ;
+    }
+    .co{
+        width: 100% ;
+    }
+}

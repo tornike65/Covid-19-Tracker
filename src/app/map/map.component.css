@@ -1,0 +1,39 @@
+#map{
+    position: relative;
+}
+
+
+ .mapboxgl-popup-content .info-flag img {
+    width: 100px;
+    border-radius: 5px;
+  }
+  
+ .mapboxgl-popup-content .info-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+ .mapboxgl-popup-content .info-container {
+    width: 150px;
+  }
+  
+ .mapboxgl-popup-content .info-flag {
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+  }
+  
+ .mapboxgl-popup-content .info-confirmed,
+ .mapboxgl-popup-content .info-recovered,
+ .mapboxgl-popup-content .info-deaths {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  
+  .mapboxgl-popup {
+    max-width: 500px;
+    
+    }

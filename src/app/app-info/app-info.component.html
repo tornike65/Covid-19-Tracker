@@ -1,0 +1,39 @@
+
+<aside class="left">
+    <div class="app__header">
+      <h1>COVID-19 Tracker</h1>
+      <div> 
+        <div>
+          <select #select class="form-control form-control-lg" (change) = "getCurrentCountryInfo(select.value)">
+            <option value="WorldWide" selected>WorldWide</option>
+            <option *ngFor="let item of countries" [value]="item.country">{{item.country}}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="info">
+      <div class="cases shadow">
+        <div>
+          <p>Coronavirus Cases</p>
+          <h2>+{{worldInfo.todayCases | number}}k</h2>
+          <p>{{worldInfo.cases | number}} Total</p>
+        </div>
+      </div>
+      <div class="recovery shadow">
+        <div>
+          <p>Recovered</p>
+          <h2 style="color: lightgreen !important;">+{{worldInfo.todayRecovered | number}}k</h2>
+          <p>{{worldInfo.recovered | number}} Total</p>
+        </div>
+      </div>
+      <div class="death shadow">
+        <div>
+          <p>Death</p>
+          <h2>+{{worldInfo.todayDeaths | number}}k</h2>
+          <p>{{worldInfo.deaths | number}} Total</p>
+        </div>
+      </div> 
+    </div>
+    
+     <app-map  [currentCountry] = "currentCountry" [countries] = "countries" [allData] = "allData"></app-map>
+ </aside>
